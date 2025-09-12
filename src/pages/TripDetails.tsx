@@ -799,7 +799,7 @@ const TripDetails = () => {
                         <div className="prose max-w-none">
                           <div className="bg-gradient-to-r from-orange-50 to-white p-6 rounded-lg border-l-4 border-orange-500 mb-6">
                             <h3 className="text-lg font-semibold text-orange-800 mb-3">About This Adventure</h3>
-                            <p className="text-gray-700 leading-relaxed">
+                            <p className="text-gray-700 leading-relaxed break-words overflow-wrap-anywhere whitespace-normal">
                               {trip.overview_content || trip.short_desc || 'No description available yet.'}
                             </p>
                           </div>
