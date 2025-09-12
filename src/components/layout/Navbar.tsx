@@ -159,7 +159,7 @@ const Navbar = () => {
                   }`}
                 >
                   <Shield className="w-4 h-4" />
-                  Admin Login
+                  Login
                 </Link>
               )}
             </div>
@@ -184,7 +184,7 @@ const Navbar = () => {
                     className="border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200"
                   >
                     <Shield className="h-4 w-4 mr-2" />
-                    Admin Login
+                    Login
                   </Button>
                 </Link>
               )}
@@ -292,7 +292,7 @@ const Navbar = () => {
                     }`}
                   >
                     <Shield className="w-4 h-4" />
-                    Admin Login
+                    Login
                   </Link>
                 )}
               </div>
