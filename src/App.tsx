@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -9,7 +8,6 @@ import { HelmetProvider } from "react-helmet-async";
 // Import button visibility fixes
 import "@/utils/buttonVisibilityFix";
 
-import LoadingScreen from "./components/LoadingScreen";
 import ErrorBoundary from "./components/ErrorBoundary";
 import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
@@ -44,20 +42,6 @@ const queryClient = new QueryClient({
 });
 
 const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  const handleLoadingComplete = () => {
-    setIsLoading(false);
-  };
-
-  if (isLoading) {
-    return (
-      <ErrorBoundary>
-        <LoadingScreen onLoadingComplete={handleLoadingComplete} />
-      </ErrorBoundary>
-    );
-  }
-
   return (
     <ErrorBoundary>
       <HelmetProvider>
