@@ -202,7 +202,13 @@ const HeroSection = () => {
                     <>
                       <div className="relative">
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-                          {heroText.title}
+                          {heroText.title.split(' ').map((word, index) => 
+                            word.toLowerCase() === 'adventure' ? (
+                              <span key={index} className="text-orange-500">{word} </span>
+                            ) : (
+                              <span key={index}>{word} </span>
+                            )
+                          )}
                         </h1>
                         {isAdmin && (
                           <Button
