@@ -259,12 +259,12 @@ const HeroSection = () => {
         </div>
       </motion.div>
 
-      {/* Horizontal Scrolling Upcoming Adventures Section */}
+      {/* Horizontal Scrolling Upcoming Trips Section */}
       <section className="py-12 bg-gradient-to-r from-orange-50 to-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Upcoming <span className="text-orange-600">Adventures</span>
+              Upcoming <span className="text-orange-600">Trips</span>
             </h2>
             {isAdmin && (
               <Button
@@ -325,9 +325,6 @@ const HeroSection = () => {
                         {trip.duration && (
                           <p className="text-gray-600 text-sm">⏱️ {trip.duration}</p>
                         )}
-                        {trip.short_desc && (
-                          <p className="text-gray-600 text-sm line-clamp-2">{trip.short_desc}</p>
-                        )}
                         {trip.base_price && (
                           <div className="text-2xl font-bold text-orange-600">
                             ₹{trip.base_price}
@@ -341,7 +338,7 @@ const HeroSection = () => {
             </div>
           ) : (
             <div className="text-center py-12">
-              <p className="text-gray-500 mb-4">No upcoming adventures selected</p>
+              <p className="text-gray-500 mb-4">No upcoming trips selected</p>
             </div>
           )}
         </div>
@@ -352,7 +349,7 @@ const HeroSection = () => {
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
           <div className="bg-white rounded-lg p-6 max-w-4xl w-full max-h-[80vh] overflow-y-auto">
             <div className="flex justify-between items-center mb-6">
-              <h3 className="text-xl font-semibold">Select Upcoming Adventures</h3>
+              <h3 className="text-xl font-semibold">Select Upcoming Trips</h3>
               <div className="flex gap-2">
                 <Button onClick={saveFeaturedTrips} className="bg-green-600 hover:bg-green-700">
                   <Save className="w-4 h-4 mr-2" />
