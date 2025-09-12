@@ -202,7 +202,7 @@ const HeroSection = () => {
                     <>
                       <div className="relative">
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-                          Treking <span className="text-orange-500">Adventure</span> Touring
+                          {heroText.title}
                         </h1>
                         {isAdmin && (
                           <Button
